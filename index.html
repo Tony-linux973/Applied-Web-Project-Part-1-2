@@ -12,125 +12,147 @@
 <body>
     <!--The header section for company logo, navigation bars, slogans-->
     <header>
-        <a href="index.html"><img src="images/logos/Shopwell-logo-transparent.png" alt="ShopWell logo" title="Image sized 154kb" width="200" height="200" ></a> 
-        <nav>
-            <a href="index.html" target="_blank">Home</a>
-            <a href="jobs.html" target="_blank">Careers</a>
-            <a href="about.html" target="_blank">About Us</a>
-            <a href="apply.html" target="_blank">Apply for Jobs</a>
-        </nav>
-    <!--SEARCH BOX with a button (search for a product)-->
-        
-            
-        <form action="#" method="get">
-            <fieldset>
-                <legend>Search for items or categories</legend>
-                <input type="text" id="store-search" name="search-query" placeholder="e.g., electronics, clothing, smartphones">
-                <button type="submit">Search</button>
-            </fieldset>                
-        </form>    
-        <h1>Seamless retail, smarter experience</h1>
+        <div class="header-top">
+            <a href="index.html"><img src="images/logos/Shopwell-logo-transparent.png" alt="ShopWell logo" title="Image sized 154kb" width="200" height="200" ></a> 
+            <div class="header-title"> 
+                <h1>ShopWell</h1>
+                <p style="font-style: italic;">Experience Convenience Shopping</p>
+            </div>
+        </div>
+
+        <!--SEARCH BOX with a button (search for a product)-->
+        <div>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Search for items or categories</legend>
+                    <input type="text" id="store-search" name="search-query" placeholder="e.g., electronics, clothing, smartphones">
+                    <button type="submit">Search</button>
+                </fieldset>                
+            </form>
+        </div>
     </header>
+
+    <!--Slogan-->
+    <div class="slogan">
+        <p>Seamless retail, smarter experience</p>
+    </div>
+    
+    <!--NAVIGATION BAR with links to Home, Careers, About Us and Join Our Team pages-->
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="jobs.html" target="_blank">Careers</a>
+        <a href="about.html" target="_blank">About Us</a>
+        <a href="apply.html" target="_blank">Join Our Team</a>
+    </nav>
     <hr>
 
     <!--======== MAIN CONTENT ===============-->
     <main>
+        <div class="main-content">
+            <!--Company Description-->
+            <section>
+                <div class="company-description">
+                    <!--additional image-->
+                    <img id="marketing-image" src="images/marketing/a-shopcart-with-a-phone.jpg" alt="Shopping With Us" width="400" height="400">
+                    <div>
+                        <h2>Redefine Online Retail</h2>
+                        <p>ShopWell is an innovative digital retail platform focused on creating smooth, engaging customer experiences. 
+                        We are growing our technical and UX teams to improve customer-facing websites, optimise product listings, 
+                        and streamline online application processes. From smart search functionality to personalised recommendations, 
+                        we design e-commerce solutions that drive conversions.</p>
+                    </div>
+                </div>
+            </section>
 
-        <!--Company Description-->
-        <section>
-            <h2>Redefine Online Retail</h2>
-            <p>ShopWell is an innovative digital retail platform focused on creating smooth, engaging customer experiences. 
-            We are growing our technical and UX teams to improve customer-facing websites, optimise product listings, 
-            and streamline online application processes. From smart search functionality to personalised recommendations, 
-            we design e-commerce solutions that drive conversions.</p>
-            <!--additional image-->
-            <img src="images/marketing/a-shopcart-with-a-phone.jpg" alt="Shopping With Us" 
-            width="400" height="400">
-        </section>
+            <!--Product lists with merged cell table-->
+            <section>
+                <div class="table-section">
+                     <h2 style="text-align:center;">ShopWell Product List</h2>
 
-        <!--Product lists with merged cell table-->
-        <section>
-            <h1 style="text-align:center;">ShopWell Product List</h1>
+                    <table border="1">
 
-            <table border="1">
+                        <!-- Merged Header Row -->
+                        <thead>
+                            <tr>
+                                <th colspan="6">Featured Products</th>
+                            </tr>
 
-                <!-- Merged Header Row -->
-                <thead>
-                    <tr>
-                        <th colspan="6">Featured Products</th>
-                    </tr>
+                            <!-- Column Titles -->
+                            <tr>
+                                <th class="category">Category</th>
+                                <th class="product">Product</th>
+                                <th class="p-name">Name</th>                        
+                                <th class="p-desc">Description</th>
+                                <th class="p-price">Price</th>
+                                <th class="p-action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--Electronic Category (Rowspan)-->
+                            <tr>
+                                <td rowspan="2" class="category">Electronic</td>
+                                <td><img src="images/products/laptop.jpeg" alt="laptop.jpeg" width="150"></td>
+                                <td>Laptop</td>
+                                <td>High Performance Gaming Laptop</td>
+                                <td>$1999</td>
+                                <td><button>Add to Cart</button></td>
+                            </tr>
 
-                    <!-- Column Titles -->
-                     <tr>
-                        <th class="category">Category</th>
-                        <th class="product">Product</th>
-                        <th class="p-name">Name</th>                        
-                        <th class="p-desc">Description</th>
-                        <th class="p-price">Price</th>
-                        <th class="p-action">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Electronic Category (Rowspan)-->
-                    <tr>
-                        <td rowspan="2" class="category">Electronic</td>
-                        <td><img src="images/products/laptop.jpeg" alt="laptop.jpeg" width="150"></td>
-                        <td>Laptop</td>
-                        <td>High Performance Gaming Laptop</td>
-                        <td>$1999</td>
-                        <td><button>Add to Cart</button></td>
-                    </tr>
+                            <tr>
+                                <td><img src="images/products/smartphone.jpg" alt="smartphone.jpg" width="100"></td>
+                                <td>Smartphone</td>
+                                <td>Latest 5G Smartphone</td>
+                                <td>$999</td>
+                                <td><button>Add to Cart</button></td>
+                            </tr>
 
-                    <tr>
-                        <td><img src="images/products/smartphone.jpg" alt="smartphone.jpg" width="100"></td>
-                        <td>Smartphone</td>
-                        <td>Latest 5G Smartphone</td>
-                        <td>$999</td>
-                        <td><button>Add to Cart</button></td>
-                    </tr>
+                            <!-- Accessories Category-->
+                            <tr>
+                                <td rowspan="2" class="category">Accessories</td>
+                                <td><img src="images/products/headphone.jpg" alt="headphone.jpg" width="100"></td>
+                                <td>Headphone</td>
+                                <td>Wireless Noise Cancelling Headphone</td>
+                                <td>$375</td>
+                                <td><button>Add to Cart</button></td>
+                            </tr>
 
-                    <!-- Accessories Category-->
-                    <tr>
-                        <td rowspan="2" class="category">Accessories</td>
-                        <td><img src="images/products/headphone.jpg" alt="headphone.jpg" width="100"></td>
-                        <td>Headphone</td>
-                        <td>Wireless Noise Cancelling Headphone</td>
-                        <td>$375</td>
-                        <td><button>Add to Cart</button></td>
-                    </tr>
+                            <tr>
+                                <td><img src="images/products/smartwatch.jpg" alt="smartwatch.jpg" width="150"></td>
+                                <td>Smart Watch</td>
+                                <td>Waterproof Fitness Smart Watch</td>
+                                <td>$397</td>
+                                <td><button>Add to Cart</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+            </section>
 
-                    <tr>
-                        <td><img src="images/products/smartwatch.jpg" alt="smartwatch.jpg" width="150"></td>
-                        <td>Smart Watch</td>
-                        <td>Waterproof Fitness Smart Watch</td>
-                        <td>$397</td>
-                        <td><button>Add to Cart</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <!--Acknowledgement of Country-->
+            <section>
+                <div>
+                    <h2>Acknowledgement of Country</h2>
+                    <p>
+                        We respectfully acknowledge the Wurundjeri Woi-wurrung People 
+                        of the Kulin Nation, who are the Traditional Owners of the land 
+                        on which ShopWell&rsquo;s Melbourne HQ is located in Melbourne&rsquo;s 
+                        east, and pay our respect to their Elders past and present.
+                    </p>
+                    <p>
+                        We are honoured to recognise our connection to Wurundjeri Country, 
+                        history, culture and spirituality through these locations, and strive to ensure 
+                        that we operate in a manner that respects and honours the Elders and Ancestors 
+                        of these lands.
+                    </p>
+                    <p>
+                        We also acknowledge and respect the Traditional Owners of lands across Australia, 
+                        their Elders, Ancestors, cultures and heritage.
+                    </p>
+                </div>    
+            </section>
 
-        <!--Acknowledgement of Country-->
-        <section>
-            <h2>Acknowledgement of Country</h2>
-            <p>
-                We respectfully acknowledge the Wurundjeri Woi-wurrung People 
-                of the Kulin Nation, who are the Traditional Owners of the land 
-                on which ShopWell&rsquo;s Melbourne HQ is located in Melbourne&rsquo;s 
-                east, and pay our respect to their Elders past and present.
-            </p>
-            <p>
-                We are honoured to recognise our connection to Wurundjeri Country, 
-                history, culture and spirituality through these locations, and strive to ensure 
-                that we operate in a manner that respects and honours the Elders and Ancestors 
-                of these lands.
-            </p>
-            <p>
-                We also acknowledge and respect the Traditional Owners of lands across Australia, 
-                their Elders, Ancestors, cultures and heritage.
-            </p>
-            
-        </section>
+        </div>        
     </main>
     <hr>
 
