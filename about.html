@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="styles/pagestyle.css">
     <link rel="stylesheet" href="styles/about-layout.css">
     <title>About Us</title>
+
+    <style>
+        /* Header (banner img) */
+        header {
+            display: grid;
+            grid-template-columns:  1fr;
+            justify-items: center;
+            background-color:  #12204A;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -25,11 +36,10 @@
         <h1>About Our Team</h1>
 
         <!-- Introduction about our team -->
-        <p id="sub-h1">Welcome to our team! We are dedicated to providing the best services in the industry.</p>
-
+        <!-- Description under header centering -->
+        <p style="text-align: center">Welcome to our team! We are dedicated to providing the best services in the industry.</p>
         <hr id="article-break">
-
-        <div class="page">
+        <div class="article">
             <article>
                 <section id="team">
                     <h2>Team name</h2>
@@ -41,7 +51,6 @@
                         </li>
                     </ul>
                 </section>
-                
                 <!-- Member contributions and quotes -->
                 <section id="members">
                     <h2>Our Members</h2>
@@ -103,62 +112,60 @@
 
                 <!-- Fun fact table -->
                 <section id="facts">
-                    <h2>Fun Facts</h2>
-                    <table>
-                        <caption>Facts about our team</caption>
-                        <thead>
-                            <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Ton Huang Do</th>
-                            <th scope="col">David Tucker</th>
-                            <th scope="col">Myles McCarthy</th>
-                            <th scope="col">Oscar Hill</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <h2>Fun Facts</h2>
+                <table>
+                    <caption>Facts about our team</caption>
+                    <thead>
                         <tr>
-                        <th scope="row">Dream job</th>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
+                        <!-- the scope attribute assists non-visual user agents -->
+                        <th scope="col"></th>
+                        <th scope="col">Ton Huang Do</th>
+                        <th scope="col">David Tucker</th>
+                        <th scope="col">Myles McCarthy</th>
+                        <th scope="col">Oscar Hill</th>
                         </tr>
-                        <tr>
-                        <th scope="row">Hometown</th>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Favourite Cuisine</th>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Interesting hobby</th>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        <td>Something</td>
-                        </tr>
-                        </tbody>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <th scope="row">Dream job</th>
+                    <td>Manager of nothing</td>
+                    <td>Robotics Engineer</td>
+                    <td>Zoology</td>
+                    <td>Indie Developer</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Hometown</th>
+                    <td>Bac Lieu</td>
+                    <td>Hurstbridge</td>
+                    <td>Hobart</td>
+                    <td>Sandringham</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Favourite Cuisine</th>
+                    <td>Chinese</td>
+                    <td>Japanese</td>
+                    <td>Indian</td>
+                    <td>Southeast Asian</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Interesting hobby</th>
+                    <td>Mahjong</td>
+                    <td>Making AI voice automations</td>
+                    <td>Bouldering</td>
+                    <td>Playing piano</td>
+                    </tr>
+                    </tbody>
                     </table>
                 </section>
             </article>
 
             <!-- Group photo -->
-            <section id="photo">
-                <div class="container">
-                    <figure>
-                        <a href="images/about/group.jpg"><img src="images/about/group.jpg" alt="Photo of the team" title="Filesize 285kb"/></a>
-                        <figcaption>From left to right: Ton Hoang Do, David Tucker, Myles McCarthy and Oscar Hill</figcaption>
-                    </figure>
-                </div>
-            </section>
-
+            <div class="container">
+                <figure>
+                    <a href="images/about/group.jpg"><img src="images/about/group.jpg" alt="Photo of the team" title="Filesize 285kb"/></a>
+                    <figcaption>From left to right: Ton Hoang Do, David Tucker, Myles McCarthy and Oscar Hill</figcaption>
+                </figure>
+            </div>	
         </div>
     </main>
 
