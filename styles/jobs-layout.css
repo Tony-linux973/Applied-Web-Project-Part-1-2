@@ -38,6 +38,7 @@ ol {
 h1 {
     color: #1a2e69;
     margin-bottom: 10px;
+    margin-top : 20px;
     border-bottom: 2px solid #1a2e69;
 }
 /* heading 2 and salary styling */
@@ -83,7 +84,8 @@ h2, #salary {
 /* flex container for job info sections */
 .job-info-flex-container {
     display: flex;
-    gap: 2em;
+    justify-content: space-between; /* adds space between sections */
+    background-color: #f6f5e9; /* light background for contrast */
 }
 
 /* gets class for each main section styling reporting line, key responsibilities and essential requirements */
