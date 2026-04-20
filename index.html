@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="uft-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="TechHive is a forward-thinking Educational Technology (EdTech) company developing innovative digital learning tools and online platforms.">
+    <meta name="keywords" content="EdTech, digital learning, online education, educational technology">
     <meta name="authors" content="Ton Hoang Do, David Tucker, Myles McCarthy and Oscar Hill">
     <link rel="stylesheet" href="styles/pagestyle.css">
     <link rel="stylesheet" href="styles/index-layout.css">
@@ -31,10 +31,29 @@
             <div class="search-bar">
                 <form action="#" method="get">
                     <fieldset>
-                        <legend>Search for courses or topics</legend>
-                        <label for="search-query">Name or Description</label>
-                        <input type="search" id="search-query" name="search-query" placeholder="e.g., Data Science, Python Programming, etc."
+                        <legend>Search for courses</legend>
+                        <label for="search-query">Course Title or Keyword</label>
+                        <input type="search" id="search-query" name="search-query" placeholder="e.g., UI Design, Python Programming, etc."
                         aria-label="Search through site content">
+
+                        <!-- Filter dropdown -->
+                        <label for="course-filter">Filter by Category:</label>
+                        <select id="course-filter" name="course-filter" class="filter-row">
+                            <option value="all">All Courses</option>
+                            <option value="web-dev">Web Development</option>
+                            <option value="design">Design</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+
+                        <!-- Level filter-->
+                        <label for="course-level">Filter by Level:</label>
+                        <select id="course-level" name="course-level" class="filter-row">
+                            <option value="all">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+
                         <button type="submit" aria-label="Search" style="font-size: 1.5rem;">&#8981;</button>
                     </fieldset>                
                 </form>
@@ -88,61 +107,74 @@
             <!--Product lists with merged cell table-->
             <section>
                 <div class="table-section">
-                     <h2 style="text-align: center;">ShopWell Product List</h2>
+                     <h2 style="text-align: center;">TechHive Course Catalog</h2>
 
                     <table>
 
                         <!-- Merged Header Row -->
                         <thead>
                             <tr>
-                                <th colspan="6">Featured Products</th>
+                                <th colspan="6">Featured Courses</th>
                             </tr>
 
                             <!-- Column Titles -->
                             <tr>
                                 <th class="sub-header" id="category">Category</th>
-                                <th class="sub-header" id="product">Product</th>
-                                <th class="sub-header" id="name">Name</th>                        
-                                <th class="sub-header" id="description">Description</th>
+                                <th class="sub-header" id="course">Course <Title></Title></th>
+                                <th class="sub-header" id="name">Instructor</th>                        
+                                <th class="sub-header" id="description">Level</th>
+                                <th class="sub-header" id="duration">Duration</th>
                                 <th class="sub-header" id="price">Price</th>
-                                <th class="sub-header" id="action">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!--Electronic Category (Rowspan)-->
+                            <!--Web Development Category (Rowspan)-->
                             <tr>
-                                <td rowspan="2" class="category">Electronic</td>
-                                <td><img src="images/products/laptop.jpeg" alt="Laptop" width="150"></td>
-                                <td>Laptop</td>
-                                <td>High Performance Gaming Laptop</td>
-                                <td>$1999</td>
-                                <td><button>Add to Cart</button></td>
+                                <td rowspan="3" class="category">Web Development</td>
+                                <td>HTML &amp; CSS for Beginners</td>
+                                <td>David Tucker</td>
+                                <td>Beginner</td>
+                                <td>12 hours</td>
+                                <td>$19.99</td>                                
                             </tr>
 
                             <tr>
-                                <td><img src="images/products/smartphone.jpg" alt="Smartphone" width="100"></td>
-                                <td>Smartphone</td>
-                                <td>Latest 5G Smartphone</td>
-                                <td>$999</td>
-                                <td><button>Add to Cart</button></td>
+                                <td>JavaScript Essentials</td>
+                                <td>Ton Hoang Do</td>
+                                <td>Intermediate</td>
+                                <td>16 hours</td>
+                                <td>$29.99</td>
                             </tr>
 
-                            <!-- Accessories Category-->
+                            
                             <tr>
-                                <td rowspan="2" class="category">Accessories</td>
-                                <td><img src="images/products/headphone.jpg" alt="Headphone" width="100"></td>
-                                <td>Headphone</td>
-                                <td>Wireless Noise Cancelling Headphone</td>
-                                <td>$375</td>
-                                <td><button>Add to Cart</button></td>
+                                <td>Build Modern Web Applications</td>
+                                <td>Myles McCarthy</td>
+                                <td>Advanced</td>
+                                <td>24 hours</td>
+                                <td>$39.99</td>
                             </tr>
 
+                            <!-- Data Science: rowspan across 2 rows -->
                             <tr>
-                                <td class="smart-watch"><img src="images/products/smartwatch.jpg" alt="Smart Watch" width="150"></td>
-                                <td>Smart Watch</td>
-                                <td>Waterproof Fitness Smart Watch</td>
-                                <td>$397</td>
-                                <td><button>Add to Cart</button></td>
+                                <td rowspan="2" class="category">Data Science</td>
+                                <td>Python for Data Analysis</td>
+                                <td>Oscar Hill</td>
+                                <td>Intermediate</td>
+                                <td>20 hours</td>
+                                <td>$34.99</td>
+                            </tr>
+                            <tr>
+                                <td>Machine Learning </td>
+                                <td>David Tucker</td>
+                                <td>Advanced</td>
+                                <td>30 hours</td>
+                                <td>$44.99</td>
+                            </tr>
+                             <tr>
+                                <td colspan="6" style="text-align: center; font-style: italic; color: #555;">
+                                    All courses include lifetime access, certificate of completion, and mobile support.
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -183,9 +215,9 @@
         <p>
             <a href="https://oscarhill4.atlassian.net/jira/software/projects/WTPA1/boards/35/backlog?epics=visible">Jira Project Board</a> &nbsp;|&nbsp;
             <a href="https://github.com/Tony-linux973/Applied-Web-Project-Part-1-2/tree/main">GitHub Repository</a> &nbsp;|&nbsp;
-            Email us at: <a href="mailto:info@shopwell.com">info@shopwell.com</a>
+            Email us at: <a href="mailto:info@techhive.com">info@techhive.com</a>
         </p>
-        <p>&copy;2026 ShopWell - Building the Future of Digital Retail.</p>
+        <p>&copy;2026 TechHive - Building the Future of Digital Education.</p>
     </footer>
 </body>
 </html>
