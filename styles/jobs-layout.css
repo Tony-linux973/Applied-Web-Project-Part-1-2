@@ -1,7 +1,6 @@
 header{
-    display: grid;
-    grid-template-columns:  1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     background-color : #12204a;
 }
 
@@ -39,6 +38,7 @@ ol {
 h1 {
     color: #1a2e69;
     margin-bottom: 10px;
+    margin-top : 20px;
     border-bottom: 2px solid #1a2e69;
 }
 /* heading 2 and salary styling */
@@ -81,12 +81,28 @@ h2, #salary {
     margin-left: 15px;         
     margin-bottom: 20px;     
 }
+/* flex container for job info sections */
+.job-info-flex-container {
+    display: flex;
+    justify-content: space-between; /* adds space between sections */
+    background-color: #f6f5e9; /* light background for contrast */
+}
 
 /* gets class for each main section styling reporting line, key responsibilities and essential requirements */
 .reporting-line, .key-responsibilities, .essential-requirements {
     padding: 15px;              /* adds padding */
     margin-bottom: 20px;        /* adds margin  to bottom*/
     width: 30%;                 /* each section only takes 30%*/
-    display: inline-block;      /*sets up sections to be side by side*/
-    vertical-align: top;        /* aligns sections to the top*/
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin: 2%;
+    padding: 6px;
+    color: #1a2e69;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid #1a2e69;  /* adds a line around the text */
 }
