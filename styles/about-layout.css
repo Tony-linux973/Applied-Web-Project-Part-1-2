@@ -15,7 +15,6 @@ h1 {
 .article{
     display: flex;
     gap: 2em;
-    align-items: center;
 }
 /* All writing in article */
 article {
